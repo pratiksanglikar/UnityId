@@ -9,6 +9,7 @@ import java.util.List;
 import com.pratiksanglikar.unityid.imagegenerator.InsufficientRandomValuesException;
 import com.pratiksanglikar.unityid.imagegenerator.RandomImageGenerator;
 import com.pratiksanglikar.unityid.imagegenerator.RandomJPGImageGenerator;
+import com.pratiksanglikar.unityid.randomnumber.HttpRandomSequenceGenerator;
 import com.pratiksanglikar.unityid.randomnumber.NativeRandomSequenceGenerator;
 import com.pratiksanglikar.unityid.randomnumber.RandomSequenceGenerator;
 
@@ -23,10 +24,11 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		int height = 128, width = 128;
-		RandomSequenceGenerator sequenceGenerator = new NativeRandomSequenceGenerator();
+//		RandomSequenceGenerator sequenceGenerator = new NativeRandomSequenceGenerator();
+		RandomSequenceGenerator sequenceGenerator = new HttpRandomSequenceGenerator();
 		RandomImageGenerator imageGenerator = new RandomJPGImageGenerator();
-		List<Integer> randomNumbers = sequenceGenerator.generateRandomSequence(height * width * 4, 0, 256);
 		try {
+			List<Integer> randomNumbers = sequenceGenerator.generateRandomSequence(height * width * 3, 0, 256);
 			imageGenerator.generateRandomImage(height, width, randomNumbers);
 		} catch (InsufficientRandomValuesException e) {
 			System.out.println(e.getMessage());
