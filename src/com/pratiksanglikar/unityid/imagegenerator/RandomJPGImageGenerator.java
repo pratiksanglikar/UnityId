@@ -38,7 +38,6 @@ public class RandomJPGImageGenerator implements RandomImageGenerator {
 				int blue = randomSequence.get(i * j + 3);
 				int pixel = (alpha << 24) | (red << 16) | (green << 8) | blue;
 				image.setRGB(i, j, pixel);
-				System.out.println(alpha + " "  + red + " " + green + " " + blue);
 			}
 		}
 		writeImage(image);

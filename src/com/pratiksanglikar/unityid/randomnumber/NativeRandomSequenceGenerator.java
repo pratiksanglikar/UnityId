@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.pratiksanglikar.unityid;
+package com.pratiksanglikar.unityid.randomnumber;
 
 import java.util.ArrayList;
 import java.util.List;

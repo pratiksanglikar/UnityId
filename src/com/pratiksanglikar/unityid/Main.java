@@ -9,6 +9,8 @@ import java.util.List;
 import com.pratiksanglikar.unityid.imagegenerator.InsufficientRandomValuesException;
 import com.pratiksanglikar.unityid.imagegenerator.RandomImageGenerator;
 import com.pratiksanglikar.unityid.imagegenerator.RandomJPGImageGenerator;
+import com.pratiksanglikar.unityid.randomnumber.NativeRandomSequenceGenerator;
+import com.pratiksanglikar.unityid.randomnumber.RandomSequenceGenerator;
 
 /**
  * @author Pratik Sanglikar
