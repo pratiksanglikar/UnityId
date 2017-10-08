@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.List;
 
 /**
+ * The interface contains the method to generate the random sequence with given specifications.
+ * 
  * @author Pratik Sanglikar
  *
  */

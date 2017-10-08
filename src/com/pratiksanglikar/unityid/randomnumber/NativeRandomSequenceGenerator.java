@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Random;
 
 /**
+ * Generates the Sequence of random numbers using Java's Random() API.
+ * 
  * @author Pratik Sanglikar
  *
  */
